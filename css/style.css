@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+  height: 50px;
+  padding: 0 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+
+/* CHAT */
+main {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* BOLHAS */
+.bubble {
+  max-width: 80%;
+  padding: 10px 14px;
+  border-radius: 16px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.user {
+  align-self: flex-end;
+  background: #DCF8C6;
+}
+
+.bot {
+  align-self: flex-start;
+  background: #e5e5e5;
+}
+
+/* BARRA INFERIOR */
+footer {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+footer input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 20px;
+  border: 1px solid #aaa;
+  outline: none;
+}
+
+footer button {
+  margin-left: 8px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* TEMA CLARO */
+body.light {
+  background: #f2f2f2;
+  color: #000;
+}
+
+body.light header,
+body.light footer {
+  background: #fff;
+}
+
+body.light footer button {
+  background: #4CAF50;
+  color: #fff;
+}
+
+/* TEMA ESCURO */
+body.dark {
+  background: #121212;
+  color: #fff;
+}
+
+body.dark header,
+body.dark footer {
+  background: #1e1e1e;
+  border-color: #333;
+}
+
+body.dark main {
+  background: #121212;
+}
+
+body.dark .user {
+  background: #2e7d32;
+  color: #fff;
+}
+
+body.dark .bot {
+  background: #333;
+  color: #fff;
+}
+
+body.dark footer input {
+  background: #222;
+  color: #fff;
+  border-color: #444;
+}
+
+body.dark footer button {
+  background: #2196F3;
+  color: #fff;
+}
